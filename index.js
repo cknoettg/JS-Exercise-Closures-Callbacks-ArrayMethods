@@ -293,8 +293,18 @@ function counterMaker() {
  * counter() // should return 0
  * etc
 */
-function counterMakerWithLimit(/* CODE HERE */) {
+function counterMakerWithLimit(maxValue) {
   /* CODE HERE */
+  let i = 0;
+  function counter() {
+      if (i<=maxValue){
+        return i++;
+      } else {
+        i = 0;
+        return i++;
+      }
+    }
+    return counter;
 }
 
 /////////////// END OF CHALLENGE ///////////////
