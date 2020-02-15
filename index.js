@@ -170,7 +170,7 @@ function processContains(item, list, callback) {
 */
 function processDuplicateFree(list, callback) {
   /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
-  return callback(list.filter((item, idx) => list.indexOf(item) === idx));
+  return callback(list.filter((currItem, idx, arr) => list.indexOf(currItem) === idx));
 }
 
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
